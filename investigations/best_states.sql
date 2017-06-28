@@ -8,4 +8,5 @@ INNER JOIN Surveys6 ON Procedures2.ProviderID = Surveys6.ProviderID
 WHERE Procedures2.Score IS NOT NULL
 GROUP BY Procedures2.State
 HAVING num_examples > 200
-ORDER BY avg_score DESC;
+ORDER BY avg_score DESC
+LIMIT 10;
